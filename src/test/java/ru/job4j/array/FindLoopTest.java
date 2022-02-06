@@ -23,7 +23,7 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenArrayHasLength5Then0() {
+    public void whenArrayLength3Has5Then0() {
         int[] data = new int[] {5, 10, 3};
         int el = 5;
         int result = FindLoop.indexOf(data, el);
@@ -32,7 +32,7 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenFind3() {
+    public void whenArrayStart2Finish4Has2Then3() {
         int[] data = new int[] {5, 2, 10, 2, 4};
         int el = 2;
         int start = 2;
@@ -43,7 +43,7 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenFind4() {
+    public void whenArrayStart0Finish4Has4Then4() {
         int[] data = new int[] {5, 2, 10, 2, 4};
         int el = 4;
         int start = 0;
@@ -54,7 +54,7 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenFind9() {
+    public void whenArrayStart0Finish4HasNot9ThenMinus1() {
         int[] data = new int[] {5, 2, 10, 2, 4};
         int el = 9;
         int start = 0;
