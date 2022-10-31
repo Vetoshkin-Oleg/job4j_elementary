@@ -2,7 +2,6 @@ package ru.job4j.array;
 
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.*;
-import static org.hamcrest.MatcherAssert.assertThat;
 import static ru.job4j.array.JavaNameValidator.*;
 
 class JavaNameValidatorTest {
