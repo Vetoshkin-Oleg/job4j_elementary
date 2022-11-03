@@ -42,12 +42,7 @@ public class PasswordValidator {
             throw new IllegalArgumentException("Password should contain at least one special symbol");
         }
 
-        List<String> incorrectWord = new ArrayList<>();
-        incorrectWord.add("qwerty");
-        incorrectWord.add("12345");
-        incorrectWord.add("password");
-        incorrectWord.add("admin");
-        incorrectWord.add("user");
+        List<String> incorrectWord = List.of("qwerty", "12345", "password", "admin", "user");
         for (String word : incorrectWord) {
             if ((password.toLowerCase().contains(word))) {
                 throw new IllegalArgumentException(
