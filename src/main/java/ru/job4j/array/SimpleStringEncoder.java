@@ -8,6 +8,9 @@ public class SimpleStringEncoder {
         for (int i = 1; i < input.length(); i++) {
             if (input.charAt(i) == input.charAt(i - 1)) {
                 counter++;
+                if (i == input.length() - 1) {
+                    result.append(input.charAt(input.length() - 1)).append(counter);
+                }
             } else {
                 if (counter > 1) {
                     result.append(input.charAt(i - 1)).append(counter);
@@ -17,9 +20,6 @@ public class SimpleStringEncoder {
                     counter = 1;
                 }
             }
-        }
-        if (input.charAt(input.length() - 1) == input.charAt(input.length() - 2)) {
-            result.append(input.charAt(input.length() - 1)).append(counter);
         }
         if (input.charAt(input.length() - 1) != input.charAt(input.length() - 2)) {
             result.append(input.charAt(input.length() - 1));
